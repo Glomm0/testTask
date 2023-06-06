@@ -130,7 +130,7 @@ class Helix :public Shape3d{
             Vector3d v;
             v.setX(radius*-sin(t)); //adding dx/dt
             v.setY(radius*cos(t)); //adding dy/dt
-            v.setZ(1); // dz/dt 
+            v.setZ(0); // dz/dt 
             return v;  
         }
         void print(std::ostream& os)const override{
